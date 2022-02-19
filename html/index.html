@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="../icon/icon.png">
+        <link rel="stylesheet" href="../css/styles.css">
+        <title>Video-player</title>
+    </head>
+    <body>
+        <div class="container">
+            <h1>VIDEO-PLAYER</h1>
+
+            <video width="400" height="300" poster="../img/alice-photo.jpg" id="video-player">
+                <source src="../video/alice-video.mp4" type="video/mp4">
+            </video>
+
+            <div>
+                <!-- Текущее время видео -->
+                <span id="time-current"></span> 
+                <progress id="progress" max="100" value="0"></progress> 
+                <!-- Общее время видео -->
+                <span id="time-duration"></span>
+            </div>
+
+            <div><button id="play">ВОСПРОИЗВЕСТИ</button></div>
+            <div><button id="pause">ПАУЗА</button></div>
+            <div><button id="stop">НАЧАТЬ СНАЧАЛА</button></div>
+            <div><button id="speed-up">УСКОРИТЬ</button></div>
+            <div><button id="speed-down">МЕДЛЕНЕЕ</button></div>
+            <div><button id="speed-norm">ОБЫЧНАЯ СКОРОСТЬ</button></div>
+
+            <div><input type="range" id="volume" min="0" max="100"> ЗВУК</div>
+
+        </div>
+        <script src="../js/script.js"></script>
+    </body>
+</html>

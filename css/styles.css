@@ -1,0 +1,39 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+h1 
+{
+    font-family: "Arial";
+    color: rgba(25, 184, 212, 0.884);
+}
+
+/* Выравнивание элиментов по центру и отступ с верху */
+
+.container, video
+{
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 20px;
+}
+
+video
+{
+    border: 2px solid rgba(25, 184, 212, 0.884);
+    border-radius: 20px;
+    box-shadow: 10px 5px 5px black
+}
+
+.container button, .container input
+{
+    margin-top: 10px;
+}
+
+progress
+{
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
